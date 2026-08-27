@@ -21,3 +21,8 @@ import json
 data ={"name":"dave","age":"19"}
 json_string = json.dumps(data)
 print(json_string)
+
+import os 
+
+current_dir = os.getcwd()
+print(current_dir)
