@@ -16,3 +16,8 @@ import geocoder
 
 location = geocoder.ip("me")
 print(location.latlng)
+
+import json
+data ={"name":"dave","age":"19"}
+json_string = json.dumps(data)
+print(json_string)
