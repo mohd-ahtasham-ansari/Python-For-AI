@@ -1,12 +1,12 @@
-from inherit import Animal,Dog,Cat
+from inherit import Cat, Dog
 
 
 def animal_sound(animals):
     for animal in animals:
-        print(animal.name , end=" ")
-        if isinstance(animal,Dog):
+        print(animal.name, end=" ")
+        if isinstance(animal, Dog):
             print(animal.bark())
-        elif isinstance(animal,Cat):
+        elif isinstance(animal, Cat):
             print(animal.meow())
 
 

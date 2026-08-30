@@ -52,16 +52,16 @@ temp_dir = "temp_learning_directory"
 if not os.path.exists(temp_dir):
     os.mkdir(temp_dir)
     print(f" Created directory: {temp_dir}")
-    
+
     # Let's create a file inside it
     temp_file_path = os.path.join(temp_dir, "test.txt")
     with open(temp_file_path, "w") as f:
         f.write("Hello, OS library!")
     print(f" Created file inside: {temp_file_path}")
-    
+
     # Verify file exists
     print(f" File exists now? {os.path.exists(temp_file_path)}")
-    
+
     # Cleanup: Remove the file first, then the folder
     os.remove(temp_file_path)
     print(f" Removed file: {temp_file_path}")
