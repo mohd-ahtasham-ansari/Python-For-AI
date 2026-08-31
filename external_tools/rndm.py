@@ -9,7 +9,7 @@ print(rndm_number, choice)
 import datetime
 
 today = datetime.date.today()
-time = datetime.datetime.now()
+time = datetime.datetime.now()  
 print(today, time)
 
 import geocoder
