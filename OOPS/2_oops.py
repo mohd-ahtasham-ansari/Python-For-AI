@@ -29,7 +29,12 @@ class Animal:
 
     @classmethod
     def greet(cls):                           # class method , capture the location of cls
-        print(f"hello from class metho")
+        print(f"hello from class method {cls.a}")
+
+    @staticmethod
+    def speak():
+        print("helllo , i am a static methon") #static method , capture the location of cls but not use it 
+
 
 obj = Animal("lion")          #object
 
