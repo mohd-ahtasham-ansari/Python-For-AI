@@ -16,23 +16,23 @@ print(reebok.order())
 
 class Animal:
 
-    a =12
+    a =12   #Class attribute
 
-    def __init__(self,name):
+    def __init__(self,name):  #object /instance attribute
         self.name = name
 
-    def hello(self):
+    def hello(self):                             # object /instance method
         print(f"hello my name is {self.name}")
 
-    def hello2(self):
+    def hello2(self):                           # object /instance method
         print(f"hello my name is {self.a}")
 
     @classmethod
-    def greet(cls):
+    def greet(cls):                           # class method
         print(f"hello from class metho")
 
-obj = Animal("lion")
+obj = Animal("lion")          #object
 
-obj.hello()
-obj.hello2()
-obj.greet()
+obj.hello()                 #calling object method
+obj.hello2()                  #calling object method
+obj.greet()                   #calling class method
