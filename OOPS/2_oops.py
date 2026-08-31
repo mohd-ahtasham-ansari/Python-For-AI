@@ -18,17 +18,17 @@ class Animal:
 
     a =12   #Class attribute
 
-    def __init__(self,name):  #object /instance attribute
+    def __init__(self,name):  #object /instance attribute  , capture the location os object
         self.name = name
 
-    def hello(self):                             # object /instance method
+    def hello(self):                             # object /instance method , capture the location os object and cls
         print(f"hello my name is {self.name}")
 
-    def hello2(self):                           # object /instance method
+    def hello2(self):                           # object /instance method , capture the location of object and cls
         print(f"hello my name is {self.a}")
 
     @classmethod
-    def greet(cls):                           # class method
+    def greet(cls):                           # class method , capture the location of cls
         print(f"hello from class metho")
 
 obj = Animal("lion")          #object
