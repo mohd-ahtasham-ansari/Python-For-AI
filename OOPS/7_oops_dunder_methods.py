@@ -46,3 +46,24 @@ print(f"add using dunder {num1.__add__(num2)}")
 num3=nums(20)
 print(num3==num2)
 print(f"eqaual using dunder {num3.__eq__(num2)}")
+
+
+####__________[ Decorators]____________#########
+
+def greeting(func):
+    def wrapper():
+        print("welcome to codeacademy")
+
+        func()
+
+        print("visit again")
+    return wrapper
+
+@greeting
+def hello():
+    print("lets learn to python")
+
+hello()
+
+
+
