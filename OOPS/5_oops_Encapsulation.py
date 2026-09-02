@@ -39,4 +39,33 @@ print(obj.get_price())
 obj._Car__secret()      #accessing private method
 
 
+class Factory:
+    name = "MG"  #public class attribute
+    _old = 15 # protected class attribute
+    __fuel = "petrol" #private class attribute
+    
+    def __init__(self, type , tyre , color): 
+        self.type = type
+        self.__tyre = tyre # private object attribute
+        self.color = color
+     
+    def __detail(self):
+        pass
+
+
+obj = Factory("Sedan","mrf","white")
+
+obj.name ="kia"
+obj.old =18
+print(obj.name)
+print(obj._old)
+print(obj._Factory__fuel) # acess private attribute
+
+
+class hello(Factory):
+    print(Factory._Factory__fuel)
+    print(Factory._old)
+    print(Factory.name)
+    print(Factory.__init__)
+
 
