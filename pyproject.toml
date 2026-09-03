@@ -1,7 +1,7 @@
 [project]
 name = "python-for-ai"
 version = "0.1.0"
-description = "Add your description here"
+description = "Foundational and advanced Python concepts, OOP, and utilities for AI & Agentic development"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = []
